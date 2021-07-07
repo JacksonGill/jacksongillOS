@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>jacksongillOS</title>
+  </head>
+  <body class="animate__animated">
+    <div class="welcome">
+      <div class="welcome-box">
+        <img class="welcome-computer" src="assets/welcome-computer.svg" alt="welcome" />
+        <p class="typing-text">Welcome to jacksongillOS...</p>
+      </div>
+    </div>
+    <div class="nav">
+      <div class="left-nav">
+        <h2 class="logo">jacksongillOS</h2>
+        <h2 class="about"><span>Ab</span>out</h2>
+        <div class="dropdown">
+          <h2 onClick="myFunction()" class="theme"><span>Th</span>emes</h2>
+          <div class="dropdown-content">
+            <p>Choose a Theme...</p>
+            <a class="theme_1" href="#">Theme #1</a>
+            <a class="theme_2" href="#">Theme #2</a>
+            <a class="theme_3" href="#">Theme #3</a>
+            <a class="theme_4" href="#">Theme #4</a>
+            <a class="theme_5" href="#">Theme #5</a>
+            <a class="theme_6" href="#">Default</a>
+          </div>
+        </div>
+
+        <h2 class="resume"><span>Re</span>sume</h2>
+      </div>
+      <div class="right-nav">
+        <h2 class="date">21:27 - Sun 23 May 1997</h2>
+      </div>
+    </div>
+    <!-- theme selctor -->
+
+    <!-- Note Pad (about me) -->
+    <div class="notepad about-notepad no-show animate__animated resize-drag is-window">
+      <div class="titlebar">
+        <div class="bars-container">
+          <img class="bars" src="assets/Bars.png" />
+          <div class="exit-button-container">
+            <!-- exit button svg (x and the square) -->
+            <svg
+              class="exit-button exit-button-about"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="0.5" y="0.5" width="15" height="15" fill="white" stroke="black" />
+              <path
+                d="M2.96977 2.96975C3.11042 2.82915 3.30115 2.75016 3.50002 2.75016C3.6989 2.75016 3.88963 2.82915 4.03027 2.96975L8.00002 6.9395L11.9698 2.96975C12.039 2.89812 12.1217 2.84098 12.2132 2.80167C12.3047 2.76237 12.4031 2.74168 12.5027 2.74081C12.6023 2.73995 12.7011 2.75892 12.7932 2.79663C12.8854 2.83434 12.9691 2.89003 13.0396 2.96045C13.11 3.03087 13.1657 3.11461 13.2034 3.20678C13.2411 3.29896 13.2601 3.39772 13.2592 3.4973C13.2583 3.59689 13.2377 3.6953 13.1983 3.7868C13.159 3.87831 13.1019 3.96106 13.0303 4.03025L9.06052 8L13.0303 11.9697C13.1669 12.1112 13.2425 12.3007 13.2408 12.4973C13.2391 12.6939 13.1602 12.8821 13.0211 13.0211C12.8821 13.1602 12.694 13.239 12.4973 13.2408C12.3007 13.2425 12.1112 13.1669 11.9698 13.0302L8.00002 9.0605L4.03027 13.0302C3.88882 13.1669 3.69937 13.2425 3.50272 13.2408C3.30607 13.239 3.11797 13.1602 2.97891 13.0211C2.83985 12.8821 2.76098 12.6939 2.75927 12.4973C2.75756 12.3007 2.83315 12.1112 2.96977 11.9697L6.93952 8L2.96977 4.03025C2.82917 3.8896 2.75018 3.69887 2.75018 3.5C2.75018 3.30113 2.82917 3.1104 2.96977 2.96975V2.96975Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="title">Note Pad</p>
+      </div>
+      <!-- insert text here -->
+      <div class="main-info">
+        <h2>-- About Me --</h2>
+        <textarea>
+        My name is Jackson Gill, born and raised in Houston, TX. Now based in the Austin Metropolitan Area and attending Southwestern University. I am majoring in Computer Science and minoring in Business Administration. I enjoy all things software engineering and web development. I love traveling, playing soccer, and trying new foods! 😀
+        </textarea>
+      </div>
+
+      <!-- bottom page lines svg -->
+      <p class="page-number">1</p>
+      <div class="bottom-page-container">
+        <img class="dog-ear" src="assets/Dog Ear.svg" />
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+      <div class="resize"></div>
+    </div>
+
+    <!-- Resume (notepad) -->
+    <div class="notepad resume-notepad no-show animate__animated resize-drag is-window">
+      <div class="titlebar">
+        <div class="bars-container">
+          <img class="bars" src="assets/Bars.png" />
+          <div class="exit-button-container">
+            <!-- exit button svg (x and the square) -->
+            <svg
+              class="exit-button exit-button-resume"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="0.5" y="0.5" width="15" height="15" fill="white" stroke="black" />
+              <path
+                d="M2.96977 2.96975C3.11042 2.82915 3.30115 2.75016 3.50002 2.75016C3.6989 2.75016 3.88963 2.82915 4.03027 2.96975L8.00002 6.9395L11.9698 2.96975C12.039 2.89812 12.1217 2.84098 12.2132 2.80167C12.3047 2.76237 12.4031 2.74168 12.5027 2.74081C12.6023 2.73995 12.7011 2.75892 12.7932 2.79663C12.8854 2.83434 12.9691 2.89003 13.0396 2.96045C13.11 3.03087 13.1657 3.11461 13.2034 3.20678C13.2411 3.29896 13.2601 3.39772 13.2592 3.4973C13.2583 3.59689 13.2377 3.6953 13.1983 3.7868C13.159 3.87831 13.1019 3.96106 13.0303 4.03025L9.06052 8L13.0303 11.9697C13.1669 12.1112 13.2425 12.3007 13.2408 12.4973C13.2391 12.6939 13.1602 12.8821 13.0211 13.0211C12.8821 13.1602 12.694 13.239 12.4973 13.2408C12.3007 13.2425 12.1112 13.1669 11.9698 13.0302L8.00002 9.0605L4.03027 13.0302C3.88882 13.1669 3.69937 13.2425 3.50272 13.2408C3.30607 13.239 3.11797 13.1602 2.97891 13.0211C2.83985 12.8821 2.76098 12.6939 2.75927 12.4973C2.75756 12.3007 2.83315 12.1112 2.96977 11.9697L6.93952 8L2.96977 4.03025C2.82917 3.8896 2.75018 3.69887 2.75018 3.5C2.75018 3.30113 2.82917 3.1104 2.96977 2.96975V2.96975Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="title">Note Pad</p>
+      </div>
+      <!-- insert text here -->
+      <div class="main-info">
+        <h2>-- Resume --</h2>
+        <textarea>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur recusandae et eum a minima excepturi voluptate porro neque, inventore deserunt dolorum eius blanditiis repudiandae quam velit iste sequi dolore sit.
+        </textarea>
+      </div>
+
+      <!-- bottom page lines svg -->
+      <p class="page-number">1</p>
+      <div class="bottom-page-container">
+        <img class="dog-ear" src="assets/Dog Ear.svg" />
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </div>
+
+    <!-- profile picture -->
+    <div class="profile-picture animate__animated no-show resize-drag is-window">
+      <div class="titlebar">
+        <div class="bars-container">
+          <img class="bars" src="assets/Bars.png" />
+          <div class="exit-button-container">
+            <!-- exit button svg (x and the square) -->
+            <svg
+              class="exit-button exit-button-profile-picture"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="0.5" y="0.5" width="15" height="15" fill="white" stroke="black" />
+              <path
+                d="M2.96977 2.96975C3.11042 2.82915 3.30115 2.75016 3.50002 2.75016C3.6989 2.75016 3.88963 2.82915 4.03027 2.96975L8.00002 6.9395L11.9698 2.96975C12.039 2.89812 12.1217 2.84098 12.2132 2.80167C12.3047 2.76237 12.4031 2.74168 12.5027 2.74081C12.6023 2.73995 12.7011 2.75892 12.7932 2.79663C12.8854 2.83434 12.9691 2.89003 13.0396 2.96045C13.11 3.03087 13.1657 3.11461 13.2034 3.20678C13.2411 3.29896 13.2601 3.39772 13.2592 3.4973C13.2583 3.59689 13.2377 3.6953 13.1983 3.7868C13.159 3.87831 13.1019 3.96106 13.0303 4.03025L9.06052 8L13.0303 11.9697C13.1669 12.1112 13.2425 12.3007 13.2408 12.4973C13.2391 12.6939 13.1602 12.8821 13.0211 13.0211C12.8821 13.1602 12.694 13.239 12.4973 13.2408C12.3007 13.2425 12.1112 13.1669 11.9698 13.0302L8.00002 9.0605L4.03027 13.0302C3.88882 13.1669 3.69937 13.2425 3.50272 13.2408C3.30607 13.239 3.11797 13.1602 2.97891 13.0211C2.83985 12.8821 2.76098 12.6939 2.75927 12.4973C2.75756 12.3007 2.83315 12.1112 2.96977 11.9697L6.93952 8L2.96977 4.03025C2.82917 3.8896 2.75018 3.69887 2.75018 3.5C2.75018 3.30113 2.82917 3.1104 2.96977 2.96975V2.96975Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="title title-profile-picture">profile_picture.jpg</p>
+      </div>
+    </div>
+
+    <!-- end profile picture -->
+
+    <!-- trash -->
+    <div class="trash animate__animated no-show resize-drag is-window">
+      <div class="titlebar">
+        <div class="bars-container">
+          <img class="bars" src="assets/Bars.png" />
+          <div class="exit-button-container">
+            <!-- exit button svg (x and the square) -->
+            <svg
+              class="exit-button exit-button-trash"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="0.5" y="0.5" width="15" height="15" fill="white" stroke="black" />
+              <path
+                d="M2.96977 2.96975C3.11042 2.82915 3.30115 2.75016 3.50002 2.75016C3.6989 2.75016 3.88963 2.82915 4.03027 2.96975L8.00002 6.9395L11.9698 2.96975C12.039 2.89812 12.1217 2.84098 12.2132 2.80167C12.3047 2.76237 12.4031 2.74168 12.5027 2.74081C12.6023 2.73995 12.7011 2.75892 12.7932 2.79663C12.8854 2.83434 12.9691 2.89003 13.0396 2.96045C13.11 3.03087 13.1657 3.11461 13.2034 3.20678C13.2411 3.29896 13.2601 3.39772 13.2592 3.4973C13.2583 3.59689 13.2377 3.6953 13.1983 3.7868C13.159 3.87831 13.1019 3.96106 13.0303 4.03025L9.06052 8L13.0303 11.9697C13.1669 12.1112 13.2425 12.3007 13.2408 12.4973C13.2391 12.6939 13.1602 12.8821 13.0211 13.0211C12.8821 13.1602 12.694 13.239 12.4973 13.2408C12.3007 13.2425 12.1112 13.1669 11.9698 13.0302L8.00002 9.0605L4.03027 13.0302C3.88882 13.1669 3.69937 13.2425 3.50272 13.2408C3.30607 13.239 3.11797 13.1602 2.97891 13.0211C2.83985 12.8821 2.76098 12.6939 2.75927 12.4973C2.75756 12.3007 2.83315 12.1112 2.96977 11.9697L6.93952 8L2.96977 4.03025C2.82917 3.8896 2.75018 3.69887 2.75018 3.5C2.75018 3.30113 2.82917 3.1104 2.96977 2.96975V2.96975Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="title">Trash</p>
+      </div>
+      <div class="main-content">
+        <div class="class-folder">
+          <img class="folder-icon-trash" src="assets/folder-icon.svg" alt="folder icon" />
+          <p class="text-2020">2020</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom row starting icons -->
+    <!-- floppy disk -->
+    <div class="floppy-container draggable is-file">
+      <img class="floppy-icon" src="assets/floppy-icon.svg" />
+
+      <p class="floppy-text is-file-text">System Software</p>
+    </div>
+    <!-- printer (I/O) -->
+    <div class="printer-container draggable is-file">
+      <img class="printer-icon" src="assets/printer-icon.svg" />
+
+      <p class="printer-text is-file-text">I/O</p>
+    </div>
+    <!-- sysVersion -->
+    <div class="sys-version-container draggable is-file">
+      <img class="sys-version-icon" src="assets/sysVersion-Icon.png" />
+
+      <p class="sys-version-text is-file-text">SysVersion</p>
+    </div>
+    <!-- settings -->
+    <div class="settings-container draggable is-file">
+      <img class="settings-icon" src="assets/computer-icon.svg" />
+
+      <p class="settings-text is-file-text">Terminal</p>
+    </div>
+    <!-- trash icon -->
+    <div class="trash-icon-container draggable is-file">
+      <svg
+        class="trash-icon"
+        width="32"
+        height="46"
+        viewBox="0 0 32 46"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect x="12.5" y="0.5" width="8" height="1.93617" fill="white" stroke="black" />
+        <rect x="0.5" y="2.45746" width="31" height="2.91489" fill="white" stroke="black" />
+        <path
+          d="M1.5 5.39362H30.5V44C30.5 44.8284 29.8284 45.5 29 45.5H3C2.17157 45.5 1.5 44.8284 1.5 44V5.39362Z"
+          fill="white"
+          stroke="black"
+        />
+        <path
+          d="M6 9.78723L6.89893 10.667C7.28334 11.0433 7.5 11.5585 7.5 12.0964V39.0445C7.5 39.7203 7.1588 40.3503 6.5929 40.7195L6 41.1064"
+          stroke="black"
+        />
+        <path
+          d="M12 9.78723L12.8989 10.667C13.2833 11.0433 13.5 11.5585 13.5 12.0964V39.0445C13.5 39.7203 13.1588 40.3503 12.5929 40.7195L12 41.1064"
+          stroke="black"
+        />
+        <path
+          d="M18 9.78723L18.8989 10.667C19.2833 11.0433 19.5 11.5585 19.5 12.0964V39.0445C19.5 39.7203 19.1588 40.3503 18.5929 40.7195L18 41.1064"
+          stroke="black"
+        />
+        <path
+          d="M24 9.78723L24.8989 10.667C25.2833 11.0433 25.5 11.5585 25.5 12.0964V39.0445C25.5 39.7203 25.1588 40.3503 24.5929 40.7195L24 41.1064"
+          stroke="black"
+        />
+      </svg>
+
+      <p class="trash-icon-text is-file-text">Trash</p>
+    </div>
+
+    <!-- vertical icon bar -->
+    <!-- folder -->
+    <div class="folder-container draggable is-file">
+      <img class="folder-icon" src="assets/folder-icon.svg" />
+
+      <p class="folder-text is-file-text">some_projects</p>
+    </div>
+    <!-- folder2 disk -->
+    <div class="folder2-container draggable is-file">
+      <img class="folder2-icon" src="assets/folder-icon.svg" />
+
+      <p class="folder2-text is-file-text">my_favorites</p>
+    </div>
+    <!-- about me -->
+    <div class="about3-container draggable is-file">
+      <img class="about3-icon" src="assets/ant-design_file-text-outlined.svg" />
+
+      <p class="about3-text is-file-text">about_me.txt</p>
+    </div>
+    <!-- resume -->
+    <div class="resume3-container draggable is-file">
+      <img class="resume3-icon" src="assets/ant-design_file-text-outlined.svg" />
+
+      <p class="resume3-text is-file-text">resume.txt</p>
+    </div>
+    <!-- profile picture  -->
+    <div class="sample-file-container draggable is-file">
+      <svg
+        class="file"
+        width="39"
+        height="50"
+        viewBox="0 0 39 50"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M34.4641 15.084H35.6562L34.8207 14.2336L24.5285 3.7576L23.6719 2.88563V4.10801V14.584V15.084H24.1719H34.4641ZM34.5625 46.3672H35.0625V45.8672V18.3691V17.8691H34.5625H22.75C22.2763 17.8691 21.8202 17.6777 21.4825 17.334C21.1445 16.99 20.9531 16.5215 20.9531 16.0312V4.00781V3.50781H20.4531H3.9375H3.4375V4.00781V45.8672V46.3672H3.9375H34.5625ZM25.8605 0.873653L37.6293 12.8526C37.8646 13.0921 38 13.4224 38 13.7657V48.0938C38 48.8112 37.4335 49.375 36.75 49.375H1.75C1.06648 49.375 0.5 48.8112 0.5 48.0938V1.78125C0.5 1.06376 1.06648 0.5 1.75 0.5H24.9812C25.3089 0.5 25.6243 0.633168 25.8605 0.873653Z"
+          fill="white"
+          stroke="black"
+        />
+        <path
+          class="jpg"
+          d="M7.2666 35.1953H8.64746V35.2637C8.64746 35.4596 8.69987 35.6351 8.80469 35.79C8.90951 35.945 9.07129 36.0612 9.29004 36.1387C9.51335 36.2161 9.75944 36.2549 10.0283 36.2549C10.3109 36.2549 10.5729 36.1911 10.8145 36.0635C11.0605 35.9313 11.2383 35.7308 11.3477 35.4619C11.457 35.1885 11.5117 34.5915 11.5117 33.6709V26.3906H12.8857V33.6982C12.8857 34.8558 12.7604 35.6488 12.5098 36.0771C12.2637 36.501 11.9583 36.8132 11.5938 37.0137C11.2292 37.2188 10.7324 37.3213 10.1035 37.3213C9.06901 37.3213 8.33757 37.1071 7.90918 36.6787C7.48079 36.2503 7.2666 35.7786 7.2666 35.2637V35.1953ZM16.2764 37H14.8955V26.3906H17.8486C18.9743 26.3906 19.7673 26.5068 20.2275 26.7393C20.6924 26.9671 21.041 27.3044 21.2734 27.751C21.5104 28.193 21.6289 28.708 21.6289 29.2959C21.6289 30.2894 21.2894 31.1234 20.6104 31.7979C19.9359 32.4723 18.9287 32.8096 17.5889 32.8096H16.2764V37ZM16.2764 31.75H17.2061C18.4274 31.75 19.2318 31.5153 19.6191 31.0459C20.0065 30.5765 20.2002 30.0137 20.2002 29.3574C20.2002 28.7878 20.043 28.3298 19.7285 27.9834C19.4186 27.6325 18.8011 27.457 17.876 27.457H16.2764V31.75ZM30.6592 36.5146C29.5335 37.0524 28.4603 37.3213 27.4395 37.3213C26.3776 37.3213 25.5186 37.1117 24.8623 36.6924C24.2061 36.2686 23.682 35.6602 23.29 34.8672C22.8981 34.0742 22.7021 33.0579 22.7021 31.8184C22.7021 30.4193 22.8867 29.3324 23.2559 28.5576C23.6296 27.7829 24.1536 27.1768 24.8281 26.7393C25.5026 26.2972 26.3024 26.0762 27.2275 26.0762C27.861 26.0762 28.4375 26.1764 28.957 26.377C29.4766 26.5775 29.889 26.8828 30.1943 27.293C30.5042 27.6986 30.6592 28.1019 30.6592 28.5029V28.5713H29.3809V28.5029C29.3809 28.2568 29.2852 28.029 29.0938 27.8193C28.9069 27.6051 28.6585 27.4388 28.3486 27.3203C28.0433 27.1973 27.6947 27.1357 27.3027 27.1357C26.2728 27.1357 25.4867 27.5391 24.9443 28.3457C24.402 29.1523 24.1309 30.2643 24.1309 31.6816C24.1309 33.0944 24.4089 34.2109 24.9648 35.0312C25.5208 35.8516 26.3047 36.2617 27.3164 36.2617C27.9089 36.2617 28.597 36.1204 29.3809 35.8379V32.8096H26.9951V31.75H30.6592V36.5146Z"
+          fill="black"
+        />
+      </svg>
+
+      <p class="sample-file-text is-file-text">profile_picture.jpg</p>
+    </div>
+
+    <!-- Personal projects window -->
+    <div class="personal-projects animate__animated no-show resize-drag is-window">
+      <div class="titlebar">
+        <div class="bars-container">
+          <img class="bars" src="assets/Bars.png" />
+          <div class="exit-button-container">
+            <!-- exit button svg (x and the square) -->
+            <svg
+              class="exit-button exit-button-personal-projects"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="0.5" y="0.5" width="15" height="15" fill="white" stroke="black" />
+              <path
+                d="M2.96977 2.96975C3.11042 2.82915 3.30115 2.75016 3.50002 2.75016C3.6989 2.75016 3.88963 2.82915 4.03027 2.96975L8.00002 6.9395L11.9698 2.96975C12.039 2.89812 12.1217 2.84098 12.2132 2.80167C12.3047 2.76237 12.4031 2.74168 12.5027 2.74081C12.6023 2.73995 12.7011 2.75892 12.7932 2.79663C12.8854 2.83434 12.9691 2.89003 13.0396 2.96045C13.11 3.03087 13.1657 3.11461 13.2034 3.20678C13.2411 3.29896 13.2601 3.39772 13.2592 3.4973C13.2583 3.59689 13.2377 3.6953 13.1983 3.7868C13.159 3.87831 13.1019 3.96106 13.0303 4.03025L9.06052 8L13.0303 11.9697C13.1669 12.1112 13.2425 12.3007 13.2408 12.4973C13.2391 12.6939 13.1602 12.8821 13.0211 13.0211C12.8821 13.1602 12.694 13.239 12.4973 13.2408C12.3007 13.2425 12.1112 13.1669 11.9698 13.0302L8.00002 9.0605L4.03027 13.0302C3.88882 13.1669 3.69937 13.2425 3.50272 13.2408C3.30607 13.239 3.11797 13.1602 2.97891 13.0211C2.83985 12.8821 2.76098 12.6939 2.75927 12.4973C2.75756 12.3007 2.83315 12.1112 2.96977 11.9697L6.93952 8L2.96977 4.03025C2.82917 3.8896 2.75018 3.69887 2.75018 3.5C2.75018 3.30113 2.82917 3.1104 2.96977 2.96975V2.96975Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="title personal-projects-title">Personal Projects</p>
+      </div>
+      <!-- expand icon -->
+      <div class="expand-button-container">
+        <img
+          class="expand-button expand-button-personal-projects"
+          src="assets/Icon/Expand.svg"
+          alt="expand button"
+        />
+      </div>
+
+      <!-- info bar -->
+      <div class="info-bar">
+        <p class="item-count">5 items</p>
+        <p class="disk-size">232K in disk</p>
+        <p class="available">156K available</p>
+      </div>
+      <!-- right scroll bar -->
+      <div class="right-scroll-bar">
+        <img class="up-icon" src="assets/arrow/Button/upArrow.svg" />
+        <div class="bottom">
+          <img src="assets/arrow/Button/Button/Arrow.svg" />
+          <img src="assets/arrow/Button/Button/Icon/Resize.svg" />
+        </div>
+      </div>
+      <!-- bottom scroll bar -->
+      <div class="bottom-scroll-bar">
+        <div class="image-box-left">
+          <img class="left-arrow" src="assets//Button/Arrow.svg" />
+        </div>
+        <div class="image-box-right">
+          <img class="right-arrow" src="assets//Button/Arrow.svg" />
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="fox-cnn-container personal-projects-file is-file draggable">
+          <img src="assets/ant-design_file-text-outlined.svg" alt="fox vs cnn" />
+          <p class="fox-cnn-text is-file-text">FoxVsCnn.txt</p>
+        </div>
+        <div class="spotify-dashboard-container personal-projects-file is-file draggable">
+          <img src="assets/ant-design_file-text-outlined.svg" alt="Spotify Dashboard" />
+          <p class="spotify-dashboard-text is-file-text">SpotifyDashboard.txt</p>
+        </div>
+        <div class="lilyrain-container personal-projects-file is-file draggable">
+          <img src="assets/ant-design_file-text-outlined.svg" alt="lilyrain" />
+          <p class="lilyrain-text is-file-text">LilyRain.txt</p>
+        </div>
+        <div class="bioinformatics-container personal-projects-file is-file draggable">
+          <img src="assets/ant-design_file-text-outlined.svg" alt="bioinformatics" />
+          <p class="bioinformatics-text is-file-text">Bioinformatics.txt</p>
+        </div>
+        <div class="personal-website-container personal-projects-file is-file draggable">
+          <img src="assets/ant-design_file-text-outlined.svg" alt="personal-website" />
+          <p class="personal-website-text is-file-text">PersonalWebsite.txt</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- fox vs cnn -->
+    <!-- FoxvVsCnn (notepad) -->
+    <div
+      class="
+        notepad
+        fox-vs-cnn-notepad
+        inside-projects
+        no-show
+        animate__animated
+        resize-drag
+        is-window
+      "
+    >
+      <div class="titlebar">
+        <div class="bars-container">
+          <img class="bars" src="assets/Bars.png" />
+          <div class="exit-button-container">
+            <!-- exit button svg (x and the square) -->
+            <svg
+              class="exit-button exit-button-fox-vs-cnn"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="0.5" y="0.5" width="15" height="15" fill="white" stroke="black" />
+              <path
+                d="M2.96977 2.96975C3.11042 2.82915 3.30115 2.75016 3.50002 2.75016C3.6989 2.75016 3.88963 2.82915 4.03027 2.96975L8.00002 6.9395L11.9698 2.96975C12.039 2.89812 12.1217 2.84098 12.2132 2.80167C12.3047 2.76237 12.4031 2.74168 12.5027 2.74081C12.6023 2.73995 12.7011 2.75892 12.7932 2.79663C12.8854 2.83434 12.9691 2.89003 13.0396 2.96045C13.11 3.03087 13.1657 3.11461 13.2034 3.20678C13.2411 3.29896 13.2601 3.39772 13.2592 3.4973C13.2583 3.59689 13.2377 3.6953 13.1983 3.7868C13.159 3.87831 13.1019 3.96106 13.0303 4.03025L9.06052 8L13.0303 11.9697C13.1669 12.1112 13.2425 12.3007 13.2408 12.4973C13.2391 12.6939 13.1602 12.8821 13.0211 13.0211C12.8821 13.1602 12.694 13.239 12.4973 13.2408C12.3007 13.2425 12.1112 13.1669 11.9698 13.0302L8.00002 9.0605L4.03027 13.0302C3.88882 13.1669 3.69937 13.2425 3.50272 13.2408C3.30607 13.239 3.11797 13.1602 2.97891 13.0211C2.83985 12.8821 2.76098 12.6939 2.75927 12.4973C2.75756 12.3007 2.83315 12.1112 2.96977 11.9697L6.93952 8L2.96977 4.03025C2.82917 3.8896 2.75018 3.69887 2.75018 3.5C2.75018 3.30113 2.82917 3.1104 2.96977 2.96975V2.96975Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="title">FoxVsCnn</p>
+      </div>
+      <!-- insert text here -->
+      <div class="main-info">
+        <h2>-- FOX Vs. CNN --</h2>
+        <textarea>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur recusandae et eum a minima excepturi voluptate porro neque, inventore deserunt dolorum eius blanditiis repudiandae quam velit iste sequi dolore sit.
+        </textarea>
+      </div>
+      <!-- bottom page lines svg -->
+      <p class="page-number">1</p>
+      <div class="bottom-page-container">
+        <img class="dog-ear" src="assets/Dog Ear.svg" />
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </div>
+
+    <!-- spotify dashboard -->
+    <!-- SpotifyDashboard (notepad) -->
+    <div
+      class="
+        notepad
+        spotify-dashboard-notepad
+        inside-projects
+        no-show
+        animate__animated
+        resize-drag
+        is-window
+      "
+    >
+      <div class="titlebar">
+        <div class="bars-container">
+          <img class="bars" src="assets/Bars.png" />
+          <div class="exit-button-container">
+            <!-- exit button svg (x and the square) -->
+            <svg
+              class="exit-button exit-button-spotify-dashboard"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="0.5" y="0.5" width="15" height="15" fill="white" stroke="black" />
+              <path
+                d="M2.96977 2.96975C3.11042 2.82915 3.30115 2.75016 3.50002 2.75016C3.6989 2.75016 3.88963 2.82915 4.03027 2.96975L8.00002 6.9395L11.9698 2.96975C12.039 2.89812 12.1217 2.84098 12.2132 2.80167C12.3047 2.76237 12.4031 2.74168 12.5027 2.74081C12.6023 2.73995 12.7011 2.75892 12.7932 2.79663C12.8854 2.83434 12.9691 2.89003 13.0396 2.96045C13.11 3.03087 13.1657 3.11461 13.2034 3.20678C13.2411 3.29896 13.2601 3.39772 13.2592 3.4973C13.2583 3.59689 13.2377 3.6953 13.1983 3.7868C13.159 3.87831 13.1019 3.96106 13.0303 4.03025L9.06052 8L13.0303 11.9697C13.1669 12.1112 13.2425 12.3007 13.2408 12.4973C13.2391 12.6939 13.1602 12.8821 13.0211 13.0211C12.8821 13.1602 12.694 13.239 12.4973 13.2408C12.3007 13.2425 12.1112 13.1669 11.9698 13.0302L8.00002 9.0605L4.03027 13.0302C3.88882 13.1669 3.69937 13.2425 3.50272 13.2408C3.30607 13.239 3.11797 13.1602 2.97891 13.0211C2.83985 12.8821 2.76098 12.6939 2.75927 12.4973C2.75756 12.3007 2.83315 12.1112 2.96977 11.9697L6.93952 8L2.96977 4.03025C2.82917 3.8896 2.75018 3.69887 2.75018 3.5C2.75018 3.30113 2.82917 3.1104 2.96977 2.96975V2.96975Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="title spotfiy-dashboard-title">SpotifyDashboard</p>
+      </div>
+      <!-- insert text here -->
+      <div class="main-info">
+        <h2>-- Spotify Dashboard --</h2>
+        <textarea>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur recusandae et eum a minima excepturi voluptate porro neque, inventore deserunt dolorum eius blanditiis repudiandae quam velit iste sequi dolore sit.
+        </textarea>
+      </div>
+      <!-- bottom page lines svg -->
+      <p class="page-number">1</p>
+      <div class="bottom-page-container">
+        <img class="dog-ear" src="assets/Dog Ear.svg" />
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </div>
+
+    <!-- lily rain -->
+    <!-- lilyrain (notepad) -->
+    <div
+      class="
+        notepad
+        lilyrain-notepad
+        inside-projects
+        no-show
+        animate__animated
+        resize-drag
+        is-window
+      "
+    >
+      <div class="titlebar">
+        <div class="bars-container">
+          <img class="bars" src="assets/Bars.png" />
+          <div class="exit-button-container">
+            <!-- exit button svg (x and the square) -->
+            <svg
+              class="exit-button exit-button-lilyrain"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="0.5" y="0.5" width="15" height="15" fill="white" stroke="black" />
+              <path
+                d="M2.96977 2.96975C3.11042 2.82915 3.30115 2.75016 3.50002 2.75016C3.6989 2.75016 3.88963 2.82915 4.03027 2.96975L8.00002 6.9395L11.9698 2.96975C12.039 2.89812 12.1217 2.84098 12.2132 2.80167C12.3047 2.76237 12.4031 2.74168 12.5027 2.74081C12.6023 2.73995 12.7011 2.75892 12.7932 2.79663C12.8854 2.83434 12.9691 2.89003 13.0396 2.96045C13.11 3.03087 13.1657 3.11461 13.2034 3.20678C13.2411 3.29896 13.2601 3.39772 13.2592 3.4973C13.2583 3.59689 13.2377 3.6953 13.1983 3.7868C13.159 3.87831 13.1019 3.96106 13.0303 4.03025L9.06052 8L13.0303 11.9697C13.1669 12.1112 13.2425 12.3007 13.2408 12.4973C13.2391 12.6939 13.1602 12.8821 13.0211 13.0211C12.8821 13.1602 12.694 13.239 12.4973 13.2408C12.3007 13.2425 12.1112 13.1669 11.9698 13.0302L8.00002 9.0605L4.03027 13.0302C3.88882 13.1669 3.69937 13.2425 3.50272 13.2408C3.30607 13.239 3.11797 13.1602 2.97891 13.0211C2.83985 12.8821 2.76098 12.6939 2.75927 12.4973C2.75756 12.3007 2.83315 12.1112 2.96977 11.9697L6.93952 8L2.96977 4.03025C2.82917 3.8896 2.75018 3.69887 2.75018 3.5C2.75018 3.30113 2.82917 3.1104 2.96977 2.96975V2.96975Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="title lilyrain-title">LilyRain</p>
+      </div>
+      <!-- insert text here -->
+      <div class="main-info">
+        <h2>-- Lily Rain --</h2>
+        <textarea>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur recusandae et eum a minima excepturi voluptate porro neque, inventore deserunt dolorum eius blanditiis repudiandae quam velit iste sequi dolore sit.
+        </textarea>
+      </div>
+      <!-- bottom page lines svg -->
+      <p class="page-number">1</p>
+      <div class="bottom-page-container">
+        <img class="dog-ear" src="assets/Dog Ear.svg" />
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </div>
+
+    <!-- Personal Website -->
+    <!-- Personal Website (notepad) -->
+    <div
+      class="
+        notepad
+        personal-website-notepad
+        inside-projects
+        no-show
+        animate__animated
+        resize-drag
+        is-window
+      "
+    >
+      <div class="titlebar">
+        <div class="bars-container">
+          <img class="bars" src="assets/Bars.png" />
+          <div class="exit-button-container">
+            <!-- exit button svg (x and the square) -->
+            <svg
+              class="exit-button exit-button-personal-website"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="0.5" y="0.5" width="15" height="15" fill="white" stroke="black" />
+              <path
+                d="M2.96977 2.96975C3.11042 2.82915 3.30115 2.75016 3.50002 2.75016C3.6989 2.75016 3.88963 2.82915 4.03027 2.96975L8.00002 6.9395L11.9698 2.96975C12.039 2.89812 12.1217 2.84098 12.2132 2.80167C12.3047 2.76237 12.4031 2.74168 12.5027 2.74081C12.6023 2.73995 12.7011 2.75892 12.7932 2.79663C12.8854 2.83434 12.9691 2.89003 13.0396 2.96045C13.11 3.03087 13.1657 3.11461 13.2034 3.20678C13.2411 3.29896 13.2601 3.39772 13.2592 3.4973C13.2583 3.59689 13.2377 3.6953 13.1983 3.7868C13.159 3.87831 13.1019 3.96106 13.0303 4.03025L9.06052 8L13.0303 11.9697C13.1669 12.1112 13.2425 12.3007 13.2408 12.4973C13.2391 12.6939 13.1602 12.8821 13.0211 13.0211C12.8821 13.1602 12.694 13.239 12.4973 13.2408C12.3007 13.2425 12.1112 13.1669 11.9698 13.0302L8.00002 9.0605L4.03027 13.0302C3.88882 13.1669 3.69937 13.2425 3.50272 13.2408C3.30607 13.239 3.11797 13.1602 2.97891 13.0211C2.83985 12.8821 2.76098 12.6939 2.75927 12.4973C2.75756 12.3007 2.83315 12.1112 2.96977 11.9697L6.93952 8L2.96977 4.03025C2.82917 3.8896 2.75018 3.69887 2.75018 3.5C2.75018 3.30113 2.82917 3.1104 2.96977 2.96975V2.96975Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="title personal-website-title">PersonalWebsite</p>
+      </div>
+      <!-- insert text here -->
+      <div class="main-info">
+        <h2>-- Personal Website (this)--</h2>
+        <textarea>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur recusandae et eum a minima excepturi voluptate porro neque, inventore deserunt dolorum eius blanditiis repudiandae quam velit iste sequi dolore sit.
+        </textarea>
+      </div>
+      <!-- bottom page lines svg -->
+      <p class="page-number">1</p>
+      <div class="bottom-page-container">
+        <img class="dog-ear" src="assets/Dog Ear.svg" />
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </div>
+
+    <!-- Bioinformatics -->
+    <!-- Bioinformatics (notepad) -->
+    <div
+      class="
+        notepad
+        bioinformatics-notepad
+        inside-projects
+        no-show
+        animate__animated
+        resize-drag
+        is-window
+      "
+    >
+      <div class="titlebar">
+        <div class="bars-container">
+          <img class="bars" src="assets/Bars.png" />
+          <div class="exit-button-container">
+            <!-- exit button svg (x and the square) -->
+            <svg
+              class="exit-button exit-button-bioinformatics"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="0.5" y="0.5" width="15" height="15" fill="white" stroke="black" />
+              <path
+                d="M2.96977 2.96975C3.11042 2.82915 3.30115 2.75016 3.50002 2.75016C3.6989 2.75016 3.88963 2.82915 4.03027 2.96975L8.00002 6.9395L11.9698 2.96975C12.039 2.89812 12.1217 2.84098 12.2132 2.80167C12.3047 2.76237 12.4031 2.74168 12.5027 2.74081C12.6023 2.73995 12.7011 2.75892 12.7932 2.79663C12.8854 2.83434 12.9691 2.89003 13.0396 2.96045C13.11 3.03087 13.1657 3.11461 13.2034 3.20678C13.2411 3.29896 13.2601 3.39772 13.2592 3.4973C13.2583 3.59689 13.2377 3.6953 13.1983 3.7868C13.159 3.87831 13.1019 3.96106 13.0303 4.03025L9.06052 8L13.0303 11.9697C13.1669 12.1112 13.2425 12.3007 13.2408 12.4973C13.2391 12.6939 13.1602 12.8821 13.0211 13.0211C12.8821 13.1602 12.694 13.239 12.4973 13.2408C12.3007 13.2425 12.1112 13.1669 11.9698 13.0302L8.00002 9.0605L4.03027 13.0302C3.88882 13.1669 3.69937 13.2425 3.50272 13.2408C3.30607 13.239 3.11797 13.1602 2.97891 13.0211C2.83985 12.8821 2.76098 12.6939 2.75927 12.4973C2.75756 12.3007 2.83315 12.1112 2.96977 11.9697L6.93952 8L2.96977 4.03025C2.82917 3.8896 2.75018 3.69887 2.75018 3.5C2.75018 3.30113 2.82917 3.1104 2.96977 2.96975V2.96975Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="title bioinformatics-title">Bioinformatics</p>
+      </div>
+      <!-- insert text here -->
+      <div class="main-info">
+        <h2>-- Bioinformatics--</h2>
+        <textarea>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur recusandae et eum a minima excepturi voluptate porro neque, inventore deserunt dolorum eius blanditiis repudiandae quam velit iste sequi dolore sit.
+        </textarea>
+      </div>
+      <!-- bottom page lines svg -->
+      <p class="page-number">1</p>
+      <div class="bottom-page-container">
+        <img class="dog-ear" src="assets/Dog Ear.svg" />
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </div>
+
+    <!-- terminal -->
+    <div class="terminal animate__animated no-show resize-drag is-window">
+      <div class="titlebar">
+        <div class="bars-container">
+          <img class="bars" src="assets/Bars.png" />
+          <div class="exit-button-container">
+            <!-- exit button svg (x and the square) -->
+            <svg
+              class="exit-button exit-button-terminal"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="0.5" y="0.5" width="15" height="15" fill="white" stroke="black" />
+              <path
+                d="M2.96977 2.96975C3.11042 2.82915 3.30115 2.75016 3.50002 2.75016C3.6989 2.75016 3.88963 2.82915 4.03027 2.96975L8.00002 6.9395L11.9698 2.96975C12.039 2.89812 12.1217 2.84098 12.2132 2.80167C12.3047 2.76237 12.4031 2.74168 12.5027 2.74081C12.6023 2.73995 12.7011 2.75892 12.7932 2.79663C12.8854 2.83434 12.9691 2.89003 13.0396 2.96045C13.11 3.03087 13.1657 3.11461 13.2034 3.20678C13.2411 3.29896 13.2601 3.39772 13.2592 3.4973C13.2583 3.59689 13.2377 3.6953 13.1983 3.7868C13.159 3.87831 13.1019 3.96106 13.0303 4.03025L9.06052 8L13.0303 11.9697C13.1669 12.1112 13.2425 12.3007 13.2408 12.4973C13.2391 12.6939 13.1602 12.8821 13.0211 13.0211C12.8821 13.1602 12.694 13.239 12.4973 13.2408C12.3007 13.2425 12.1112 13.1669 11.9698 13.0302L8.00002 9.0605L4.03027 13.0302C3.88882 13.1669 3.69937 13.2425 3.50272 13.2408C3.30607 13.239 3.11797 13.1602 2.97891 13.0211C2.83985 12.8821 2.76098 12.6939 2.75927 12.4973C2.75756 12.3007 2.83315 12.1112 2.96977 11.9697L6.93952 8L2.96977 4.03025C2.82917 3.8896 2.75018 3.69887 2.75018 3.5C2.75018 3.30113 2.82917 3.1104 2.96977 2.96975V2.96975Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="title terminal-title">Terminal -tsch</p>
+      </div>
+      <!-- expand icon -->
+      <div class="expand-button-container">
+        <img
+          class="expand-button expand-button-terminal"
+          src="assets/Icon/Expand.svg"
+          alt="expand button"
+        />
+      </div>
+      <div class="main-content-terminal">
+        <p class="terminal-text">> jacksongillOS$: ls</p>
+        <div class="ls-cmd line">
+          <div class="indent">
+            <p class="terminal-text">System Software</p>
+            <p class="terminal-text">I/O</p>
+            <p class="terminal-text">SysVersion</p>
+          </div>
+          <div class="indent">
+            <p class="terminal-text">Terminal</p>
+            <p class="terminal-text">Trash</p>
+            <p class="terminal-text">some_projects</p>
+          </div>
+          <div class="indent">
+            <p class="terminal-text">my_favorites</p>
+            <p class="terminal-text">about_me.txt</p>
+            <p class="terminal-text">resume.txt</p>
+          </div>
+          <div class="indent">
+            <p class="terminal-text">profile_picture.jpg</p>
+            <p class="terminal-text">.thank_you</p>
+            <p class="terminal-text">.github</p>
+          </div>
+        </div>
+        <p class="terminal-text line">> jacksongillOS$: cat .thank_you</p>
+        <div class="indent line">
+          <!-- prettier-ignore  -->
+          <p class="terminal-text">████████╗██╗░░██╗░█████╗░███╗░░██╗██╗░░██╗  ██╗░░░██╗░█████╗░██╗░░░██╗██╗</p>
+          <!-- prettier-ignore  -->
+          <p class="terminal-text">╚══██╔══╝██║░░██║██╔══██╗████╗░██║██║░██╔╝  ╚██╗░██╔╝██╔══██╗██║░░░██║██║</p>
+          <!-- prettier-ignore  -->
+          <p class="terminal-text">░░░██║░░░███████║███████║██╔██╗██║█████═╝░  ░╚████╔╝░██║░░██║██║░░░██║██║</p>
+          <!-- prettier-ignore  -->
+          <p class="terminal-text">░░░██║░░░██╔══██║██╔══██║██║╚████║██╔═██╗░  ░░╚██╔╝░░██║░░██║██║░░░██║╚═╝</p>
+          <!-- prettier-ignore  -->
+          <p class="terminal-text">░░░██║░░░██║░░██║██║░░██║██║░╚███║██║░╚██╗  ░░░██║░░░╚█████╔╝╚██████╔╝██╗</p>
+          <!-- prettier-ignore  -->
+          <p class="terminal-text">░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░░╚═╝  ░░░╚═╝░░░░╚════╝░░╚═════╝░╚═╝</p>
+        </div>
+        <p class="terminal-text line">> jacksongillOS$: cat .github</p>
+        <p class="terminal-text line indent">https://github.com/JacksonGill</p>
+      </div>
+    </div>
+
+    <!-- sysVersion -->
+    <div class="sys-version-window no-show draggable">
+      <div class="exit-button-container">
+        <!-- exit button svg (x and the square) -->
+        <svg
+          class="exit-button exit-button-sys-version"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="0.5" y="0.5" width="15" height="15" fill="white" stroke="black" />
+          <path
+            d="M2.96977 2.96975C3.11042 2.82915 3.30115 2.75016 3.50002 2.75016C3.6989 2.75016 3.88963 2.82915 4.03027 2.96975L8.00002 6.9395L11.9698 2.96975C12.039 2.89812 12.1217 2.84098 12.2132 2.80167C12.3047 2.76237 12.4031 2.74168 12.5027 2.74081C12.6023 2.73995 12.7011 2.75892 12.7932 2.79663C12.8854 2.83434 12.9691 2.89003 13.0396 2.96045C13.11 3.03087 13.1657 3.11461 13.2034 3.20678C13.2411 3.29896 13.2601 3.39772 13.2592 3.4973C13.2583 3.59689 13.2377 3.6953 13.1983 3.7868C13.159 3.87831 13.1019 3.96106 13.0303 4.03025L9.06052 8L13.0303 11.9697C13.1669 12.1112 13.2425 12.3007 13.2408 12.4973C13.2391 12.6939 13.1602 12.8821 13.0211 13.0211C12.8821 13.1602 12.694 13.239 12.4973 13.2408C12.3007 13.2425 12.1112 13.1669 11.9698 13.0302L8.00002 9.0605L4.03027 13.0302C3.88882 13.1669 3.69937 13.2425 3.50272 13.2408C3.30607 13.239 3.11797 13.1602 2.97891 13.0211C2.83985 12.8821 2.76098 12.6939 2.75927 12.4973C2.75756 12.3007 2.83315 12.1112 2.96977 11.9697L6.93952 8L2.96977 4.03025C2.82917 3.8896 2.75018 3.69887 2.75018 3.5C2.75018 3.30113 2.82917 3.1104 2.96977 2.96975V2.96975Z"
+            fill="black"
+          />
+        </svg>
+      </div>
+      <img class="bars-sys-version" src="assets/Bars.png" />
+      <div class="text-sys-version">
+        <p>An operating system like website</p>
+        <p class="main-text">jacksongillOS v1.0.1</p>
+      </div>
+    </div>
+    <!-- I/O -->
+    <div class="io-window no-show draggable">
+      <div class="exit-button-container">
+        <!-- exit button svg (x and the square) -->
+        <svg
+          class="exit-button exit-button-io"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="0.5" y="0.5" width="15" height="15" fill="white" stroke="black" />
+          <path
+            d="M2.96977 2.96975C3.11042 2.82915 3.30115 2.75016 3.50002 2.75016C3.6989 2.75016 3.88963 2.82915 4.03027 2.96975L8.00002 6.9395L11.9698 2.96975C12.039 2.89812 12.1217 2.84098 12.2132 2.80167C12.3047 2.76237 12.4031 2.74168 12.5027 2.74081C12.6023 2.73995 12.7011 2.75892 12.7932 2.79663C12.8854 2.83434 12.9691 2.89003 13.0396 2.96045C13.11 3.03087 13.1657 3.11461 13.2034 3.20678C13.2411 3.29896 13.2601 3.39772 13.2592 3.4973C13.2583 3.59689 13.2377 3.6953 13.1983 3.7868C13.159 3.87831 13.1019 3.96106 13.0303 4.03025L9.06052 8L13.0303 11.9697C13.1669 12.1112 13.2425 12.3007 13.2408 12.4973C13.2391 12.6939 13.1602 12.8821 13.0211 13.0211C12.8821 13.1602 12.694 13.239 12.4973 13.2408C12.3007 13.2425 12.1112 13.1669 11.9698 13.0302L8.00002 9.0605L4.03027 13.0302C3.88882 13.1669 3.69937 13.2425 3.50272 13.2408C3.30607 13.239 3.11797 13.1602 2.97891 13.0211C2.83985 12.8821 2.76098 12.6939 2.75927 12.4973C2.75756 12.3007 2.83315 12.1112 2.96977 11.9697L6.93952 8L2.96977 4.03025C2.82917 3.8896 2.75018 3.69887 2.75018 3.5C2.75018 3.30113 2.82917 3.1104 2.96977 2.96975V2.96975Z"
+            fill="black"
+          />
+        </svg>
+      </div>
+      <img class="bars-io" src="assets/Bars.png" />
+      <div class="content-io-container">
+        <p class="content-io">Download resume.txt</p>
+        <div class="button-download">
+          <p>Download</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="change_themes.js"></script>
+    <script src="resize_drag.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
