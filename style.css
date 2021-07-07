@@ -1,10 +1,12 @@
+@import url(//db.onlinewebfonts.com/c/53dc764fd0dbbb3140b7909afd437722?family=Chicago);
+
 *,
 *::after,
 *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'ChicagoFLF', 'Courier New', Courier;
+  font-family: "Chicago", 'Courier New', Courier;
   user-select: none;
   touch-action: none;
 }
@@ -311,8 +313,14 @@ body {
   min-height: 600px;
 }
 
+.main-info {
+  height: 80%;
+}
+
 .resume-notepad textarea {
-  height: 400px;
+  height: 100%;
+  padding: 0.2rem;
+  text-align: left;
 }
 
 /* profile picture */
@@ -793,6 +801,12 @@ body {
   top: 20%;
 }
 
+.spotify-dashboard-notepad {
+  position: absolute;
+  left: 15%;
+  top: 21%;
+}
+
 .spotfiy-dashboard-title {
   font-size: 1rem;
   top: 2px;
@@ -961,6 +975,17 @@ body {
   padding: 4px 8px;
   border: 1px solid black;
   border-radius: 25px;
+}
+
+.button-download a {
+  color: #000;
+  text-decoration: none;
+}
+
+.button-download a:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
 }
 
 .button-download:hover {
