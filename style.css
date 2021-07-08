@@ -1,11 +1,14 @@
-
+@font-face {
+  font-family: 'ChicagoLFL';
+  src: url("font/ChicagoFLF.ttf") format("truetype")
+}
 *,
 *::after,
 *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Chicago", 'Courier New', Courier;
+  font-family: 'ChicagoLFL', 'Courier New', Courier;
   user-select: none;
   touch-action: none;
 }
