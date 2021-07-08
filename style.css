@@ -11,6 +11,7 @@
   font-family: 'ChicagoLFL', 'Courier New', Courier;
   user-select: none;
   touch-action: none;
+  touch-action: manipulation;
 }
 
 /* animate__delay-2s	2s (2s delay)
@@ -335,6 +336,8 @@ body {
   margin: 80px 0 0 80px;
   border: 1.6px solid black;
   background-image: linear-gradient(black, black), url('assets/IMG_4337.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   background-blend-mode: saturation;
   box-shadow: 2px 2px 6px #777;
@@ -1061,7 +1064,7 @@ body {
   }
 
   .date {
-    font-size: 8px;
+    font-size: 7px;
   }
 
   /* vertical icons */

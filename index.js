@@ -145,7 +145,7 @@ handleExitButtons(exit_button_sys_version, sys_version);
 handleExitButtons(exit_button_io, io_window);
 
 const handleFileDblClick = (fileContainer, window) => {
-  fileContainer.addEventListener('dblclick', () => {
+  fileContainer.addEventListener('click', () => {
     if (window.classList.contains('animate__fadeOut') || window.classList.contains('no-show')) {
       window.classList.remove('animate__fadeOut');
       window.classList.remove('no-show');
